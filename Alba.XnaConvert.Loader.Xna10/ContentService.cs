@@ -44,7 +44,7 @@ namespace Alba.XnaConvert.Loader.Xna10
                 _form = new Form();
                 GraphicsDevice = new GraphicsDevice(
                     GraphicsAdapter.DefaultAdapter, DeviceType.Hardware, _form.Handle,
-                    new CreateOptions(),
+                    CreateOptions.HardwareVertexProcessing,
                     new PresentationParameters { IsFullScreen = false });
             }
         }
